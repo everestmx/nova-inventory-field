@@ -8,14 +8,13 @@
             </slot>
         </div>
         <div class="w-4/5 px-8 py-6">
-      <textarea
-          :id="field.name"
-          class="w-full form-control form-input form-input-bordered"
-          :class="errorClasses"
-          :placeholder="field.name"
-          v-model="value"
-      />
-
+            <textarea
+                :id="field.name"
+                class="w-full form-control form-input form-input-bordered"
+                :class="errorClasses"
+                :placeholder="field.name"
+                v-model="value"
+            />
             <p v-if="hasError" class="my-2 text-danger">
                 {{ firstError }}
             </p>
@@ -39,8 +38,8 @@
             this.simplemde = new SimpleMDE({
                 element: document.getElementById(this.field.name),
                 spellChecker: false,
-                hideIcons: ["image"],
-                showIcons: ["table"],
+                // showIcons: ["table"],
+                hideIcons: ['image', 'table', 'preview', 'side-by-side'],
             });
             if (this.field.value) {
                 this.simplemde.value(this.field.value);

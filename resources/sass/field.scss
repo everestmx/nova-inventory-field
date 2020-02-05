@@ -4,7 +4,7 @@
 // https://github.com/gregoriohc/laravel-nova-theme-responsive
 
 .CodeMirror, .editor-preview-side {
-    z-index: 51 !important;
+    // z-index: 51 !important;
 }
 
 .editor-toolbar.fullscreen {
@@ -13,4 +13,17 @@
 
 .markdown pre > code {
     padding: 0;
+}
+
+.CodeMirror {
+    .CodeMirror-code {
+        .cm-comment {
+            background: rgba(0, 0, 0, 0) !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.CodeMirror, .CodeMirror-scroll {
+    min-height: 300px !important;
 }

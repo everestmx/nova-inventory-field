@@ -15,5 +15,5 @@ class InventoryField extends Markdown
      *
      * @var string
      */
-    public $component = 'inventory-field';
+    public $component = 'nova-inventory-field';
 }

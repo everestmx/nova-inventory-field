@@ -1,13 +1,1 @@
-.CodeMirror,
-.editor-preview-side {
-  z-index: 51 !important;
-}
-
-.editor-toolbar.fullscreen {
-  z-index: 1001 !important;
-}
-
-.markdown pre > code {
-  padding: 0;
-}
-
+.editor-toolbar.fullscreen{z-index:1001!important}.markdown pre>code{padding:0}.CodeMirror .CodeMirror-code .cm-comment{background:transparent!important;border-radius:0!important}.CodeMirror,.CodeMirror-scroll{min-height:300px!important}
