@@ -27,3 +27,13 @@
 .CodeMirror, .CodeMirror-scroll {
     min-height: 300px !important;
 }
+
+.tab-content .markdown {
+    p {
+        margin-bottom: 0.5rem !important;
+    }
+    pre {
+        margin-top: 0 !important;
+        padding: 0 0.5rem !important;
+    }
+}
