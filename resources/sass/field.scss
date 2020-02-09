@@ -37,3 +37,29 @@
         padding: 0 0.5rem !important;
     }
 }
+
+.markdown {
+    table {
+        width: auto;
+        thead {
+            th {
+                font-weight: bold;
+                text-align: center;
+                padding: 6px 13px;
+                border: 1px solid #ddd;
+            }
+        }
+        tr {
+            background-color: #fff;
+
+            &:nth-child(2n) {
+                background-color: #f8f8f8;
+            }
+
+            td {
+                padding: 6px 13px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+}
