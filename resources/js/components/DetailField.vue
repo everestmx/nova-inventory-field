@@ -7,13 +7,15 @@
 </template>
 
 <script>
+    const plugin = require('../inventory-plugin');
+
     const md = require('markdown-it')({
         html: false,
         xhtmlOut: true,
         breaks: true,
         linkify: false,
-        typographer: true,
-    });
+        typographer: false,
+    }).use(plugin, {prefix: 'inventories'})
 
     export default {
         props: ['resource', 'resourceName', 'resourceId', 'field'],

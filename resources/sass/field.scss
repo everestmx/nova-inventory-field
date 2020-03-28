@@ -30,7 +30,7 @@
 
 .tab-content .markdown {
     p {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 1rem !important;
     }
     pre {
         margin-top: 0 !important;
@@ -39,6 +39,12 @@
 }
 
 .markdown {
+    a {
+        color: var(--primary) !important;
+    }
+    ul {
+        padding-left: 15px;
+    }
     table {
         width: auto;
         thead {
