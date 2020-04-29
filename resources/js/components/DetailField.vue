@@ -7,15 +7,18 @@
 </template>
 
 <script>
-    const plugin = require('../inventory-plugin');
+    const inventory = require('../inventory-plugin');
 
     const md = require('markdown-it')({
         html: false,
-        xhtmlOut: true,
         breaks: true,
-        linkify: false,
+        linkify: true,
         typographer: false,
-    }).use(plugin, {prefix: 'inventories'})
+    }).use(inventory, {prefix: 'inventories'});
+
+    md.linkify.tlds(require('tlds'));
+    md.linkify.set({fuzzyIP: false});
+    md.linkify.set({fuzzyEmail: false});
 
     export default {
         props: ['resource', 'resourceName', 'resourceId', 'field'],

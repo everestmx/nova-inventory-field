@@ -14,10 +14,11 @@
         "laravel-mix": "^1.0",
         "laravel-nova": "^1.0",
         "simplemde": "^1.11.2",
-        "markdown-it": "^10"
+        "markdown-it": "^10",
+        "markdown-it-regexp": "^0.4"
     },
     "dependencies": {
-        "markdown-it-regexp": "^0.4.0",
+        "tlds": "^1.207.0",
         "vue": "^2.5.0"
     }
 }
